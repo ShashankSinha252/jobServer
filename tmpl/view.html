@@ -1,0 +1,11 @@
+<h1>{{.Title}}</h1>
+
+<div>
+    <form>
+        <button type="submit" formaction="/accept/{{.ID}}">Accept</button>
+        <button type="submit" formaction="/reject/{{.ID}}">Reject</button>
+        <button type="submit" formaction="/exit">Exit</button>
+    </form>
+</div>
+
+<div>{{printf "%s" .Body}}</div>
